@@ -14,21 +14,22 @@
 
 ## Setup
 
-1. Clone the repository:
+1. Clone the repository and navigate to root directory
 
-## Running the Application Manually
+# Running the Application Manually
 
-1. Install dependencies: `mvn clean install`
+2. Install dependencies: `mvn clean install`
 
-2. start the application: `java -jar target/<jar-name>.jar`
+3. start the application: `java -jar target/<jar-name>.jar`
 
-## Running the Application with Docker
+# Running the Application with Docker
 
-1. Build the Docker image: `docker build -t epaper-service:1.0 .`
-2. Start the Docker container: `docker run --name spring-boot-container -p 8080:8080 -t epaper-service:1.0`
-3. Access the application at `http://localhost:8080`
-4. Start the Docker in case it stoped: `docker start epaper-service:1.0`
-5. Stop the Docker in case it running: `docker stop epaper-service:1.0`
+4. Build the Docker image: `docker build -t epaper-service:1.0 .`
+5. Start the Docker container: `docker run --name spring-boot-container -p 8080:8080 -t epaper-service:1.0`
+6. Access the application at `http://localhost:8080`
+7. Start the Docker in case it stoped: `docker start epaper-service:1.0`
+8. Stop the Docker in case it running: `docker stop epaper-service:1.0`
+9. Access the API docunmentation UI at `http://localhost:8080/swagger-ui/index.html#` 
 
 ## Configuration
 - `application.properties`: update database properties with MySQL. currently it's configured with H2 databse.
